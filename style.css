@@ -1,0 +1,30 @@
+body    {
+    background-color: #f5ffd8;
+}
+
+.top    {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: calc(50% - 150px);
+    left: calc(50% - 150px);
+    border-radius: 50%;
+}
+
+.bottom {
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    top: calc(50% - 500px);
+    left: calc(50% - 500px);
+    animation-name: spin;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite ;
+}
+
+@keyframes spin {
+    from    {transform: rotate(0deg); }
+    to  {transform: rotate(360deg); }
+}
+
